@@ -6,21 +6,16 @@ A utility class for dynamically loading and managing routes in an Express applic
 
 ## Features
 
-- **Dynamic Route Loading:** Automatically loads routes from the specified directory and its subdirectories.
-- **Route Initialization:** Initializes routes by adding them to the provided Express router.
-- **Console Logging:** Provides informative console logs about loaded routes and their associated HTTP methods.
+-   **Dynamic Route Loading:** Automatically loads routes from the specified directory and its subdirectories.
+-   **Route Initialization:** Initializes routes by adding them to the provided Express router.
+-   **Console Logging:** Provides informative console logs about loaded routes and their associated HTTP methods.
 
 ## Route Class
 
 ```typescript
 import fs from 'fs/promises'
 import path from 'path'
-import { Router, RequestHandler } from 'express'
-
-interface Route {
-	path: string
-	router: Router
-}
+import { Router } from 'express'
 
 class RouteLoader {
 	/**
@@ -116,5 +111,4 @@ class RouteManager {
 }
 
 export default RouteManager
-
 ```

@@ -1,11 +1,6 @@
 import fs from 'fs/promises'
 import path from 'path'
-import { Router, RequestHandler } from 'express'
-
-interface Route {
-	path: string
-	router: Router
-}
+import { Router } from 'express'
 
 class RouteLoader {
 	/**
